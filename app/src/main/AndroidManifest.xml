@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tregix.serviceprovider">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-sdk tools:overrideLibrary="com.stripe.android"/>
+
+    <application
+        android:name=".ServiceProviderApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup"
+        >
+
+        <activity android:name=".activities.PackageDetailActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_app_id" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="keyboard|screenSize"
+            android:label="@string/action_sign_in"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NavigationDrawerActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.WizardActivty"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RecoverPasswordActivity"
+            android:label="@string/action_sign_in" />
+        <activity
+            android:name=".activities.SignupActivity"
+            android:label="@string/action_join"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activities.BaseActivity" />
+        <activity
+            android:name=".activities.ContactUsActivity"
+            android:label="@string/tab_contact_us" />
+        <activity
+            android:name=".activities.MyAppointmentsActivity"
+            android:label="@string/tab_appointments" />
+        <activity android:name=".activities.ProviderListActivity" />
+        <activity android:name=".activities.ProviderDetailActivity" />
+        <activity android:name=".activities.CategoryListActivity" />
+        <activity
+            android:name=".activities.AdvanceSearch"
+            android:label="@string/title_activity_advance_search" />
+        <activity android:name=".activities.SelectableItemActivity" />
+        <activity android:name=".activities.SearchResultActivity" />
+        <activity android:name=".activities.ProviderServicesActivity" />
+        <activity android:name=".activities.BusinessHoursActivity" />
+        <activity android:name=".activities.ProviderExperienceActivity" />
+        <activity android:name=".activities.ProviderQualificationActivity" />
+        <activity android:name=".activities.ProviderAwardsActivity" />
+        <activity android:name=".activities.SingletemListActivity" />
+        <activity android:name=".activities.WebviewActivity" />
+        <activity android:name=".activities.CommonProviderInfoActivity" />
+        <activity android:name=".activities.BookAppointmentActivity" />
+        <activity android:name=".activities.BookAppointmentDetailActivity" />
+        <activity
+            android:name=".activities.PhoneNumberVerificationActivity"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name=".activities.ReviewProviderActivity" />
+        <activity android:name=".activities.ProviderReviewsActivity" />
+
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:name=".activities.AppointmentDetailActivity" />
+        <activity android:name=".activities.RejectAppointmentActivity" />
+        <activity android:name=".activities.JobDetailActivity" />
+        <activity android:name=".chat.ChatActivity" />
+
+        <service
+            android:name=".Utils.StickyService"
+            android:enabled="true" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:label="@string/title_activity_profile" />
+        <activity
+            android:name=".fragments.NearByActivity"
+            android:label="@string/title_activity_near_by" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".activities.GalleryActivity"
+            android:label="@string/txt_media" />
+        <activity android:name=".activities.ImageSlideActivity" />
+    </application>
+
+</manifest>

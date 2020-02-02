@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrlView_MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:verticalScrollbarPosition="right">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/font_medium"
+            android:text="@string/start_your_search"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_single_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingStart="20dp"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_keyboard" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_weight="25"
+                    android:background="@android:color/white"
+                    android:gravity="center|start"
+                    android:hint="@string/hint_keyword"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="@font/font_medium"
+                    android:paddingEnd="10dp"
+                    android:textColorHint="#424242"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/search_keyword"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_weight="100"
+                    android:background="@android:color/white"
+                    android:focusedByDefault="false"
+                    android:fontFamily="@font/font_opensans"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_keyword"
+                    android:maxLines="1"
+                    android:paddingLeft="7dp"
+                    android:paddingEnd="7dp"
+                    android:paddingRight="7dp"
+                    android:textColorHint="@color/hint_color"
+                    android:paddingStart="7dp"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"/>
+            </LinearLayout>
+
+            <include layout="@layout/layout_single_line" />
+
+            <LinearLayout
+                android:id="@+id/search_category_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingStart="20dp"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_briefcase" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_weight="30"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_medium"
+                    android:background="@android:color/white"
+                    android:gravity="center|start"
+                    android:hint="@string/hint_category"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:paddingEnd="7dp"
+                    android:textColorHint="#424242"
+                    android:textSize="17sp"
+                    android:paddingStart="7dp" />
+
+                <TextView
+                    android:id="@+id/search_category"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/field_height"
+                    android:layout_gravity="center"
+                    android:layout_weight="70"
+                    android:background="@android:color/white"
+                    android:drawableEnd="@drawable/ic_chevron_right"
+                    android:drawableRight="@drawable/ic_chevron_right"
+                    android:fontFamily="@font/font_medium"
+                    android:gravity="center|start"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="#4dc176"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_single_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingStart="20dp"
+                android:weightSum="100">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_location" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/search_location"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_weight="100"
+                        android:background="@android:color/white"
+                        android:focusedByDefault="false"
+                        android:fontFamily="@font/font_opensans"
+                        android:ellipsize="end"
+                        android:hint="@string/set_location"
+                        android:maxLines="1"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:padding="7dp"
+                        android:inputType="none"
+                        android:gravity="start"
+                        android:textSize="17sp"
+                        android:textColorHint="@color/hint_color" />
+
+                    <ImageView
+                        android:id="@+id/current_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="5"
+                        app:srcCompat="@drawable/ic_crosshairs" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_single_line" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_background"
+            android:text="@string/title_search_now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/home_advance_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/title_advanced_search"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_funnel_black" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <RelativeLayout
+            android:id="@+id/categories_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/title_top_categories"
+                android:fontFamily="@font/font_medium"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|center"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/title_view_all"
+                android:textColor="@color/view_all"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_chevron_right" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="7dp">
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/recyclerView_categories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                app:shimmer_demo_layout="@layout/demo_category_item"
+                app:shimmer_demo_child_count="3" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/featured_listing_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/title_featured_listing"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|center"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/title_view_all"
+                android:textColor="@color/view_all"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_chevron_right" />
+        </RelativeLayout>
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/featured_listing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:nestedScrollingEnabled="false"
+            app:shimmer_demo_child_count="1"
+            app:shimmer_demo_layout="@layout/featured_provider_demo_item" />
+
+    </LinearLayout>
+</ScrollView>

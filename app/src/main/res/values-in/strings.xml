@@ -1,0 +1,248 @@
+<resources>
+
+    <string name="app_name">Service Provider</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Kata sandi</string>
+    <string name="action_sign_in">Masuk sekarang</string>
+    <string name="action_join">Bergabung sekarang</string>
+    <string name="action_sign_in_short">Masuk</string>
+    <string name="error_invalid_email">Alamat email ini tidak valid</string>
+    <string name="error_invalid_password">Kata sandi ini terlalu pendek</string>
+    <string name="error_incorrect_password">Kata sandi ini salah</string>
+    <string name="error_field_required">Bagian ini diperlukan</string>
+    <string name="permission_rationale">"Izin kontak diperlukan untuk memberikan penyelesaian email."</string>
+    <string name="title_activity_navigation_drawer">Home</string>
+    <string name="navigation_drawer_open">Buka navigasi</string>
+    <string name="navigation_drawer_close">Tutup navigasi</string>
+    <string name="action_settings">Pengaturan</string>
+
+    <string name="title_activity_wizard_activty">Aktivitas Wizard</string>
+    <string name="dummy_button">Tombol Dummy</string>
+    <string name="dummy_content">Dummy\nKonten</string>
+    <string name="do_not_have_and_account_create_account">Belum punya akun? Buat akun </string>
+    <string name="already_have_and_account_create_account">Sudah memiliki akun? <b> Masuk sekarang </b></string>
+    <string name="forgot_your_password">Lupa kata sandi Anda?</string>
+
+    <string name="password_reset_link">Tautan reset password akan dikirim ke email Anda setelah Mengklik Recover</string>
+    <string name="you_agree_to_comply_with_the_supplemental_terms_amp_conditions_set_forth_in_this_agreement"><![CDATA[Anda setuju untuk mematuhi Syarat dan Ketentuan tambahan yang ditetapkan]]></string>
+
+    <array name="business_category">
+        <item>Kategori Bisnis</item>
+    </array>
+
+
+    <array name="business_sub_category">
+        <item>Sub Kategori Bisnis</item>
+    </array>
+    <array name="business_gender">
+        <item>Jenis kelamin</item>
+        <item>Pria</item>
+        <item>Wanita</item>
+    </array>
+    <array name="review_time">
+        <item>Total Waktu Tunggu</item>
+        <item>15 menit</item>
+        <item>20 menit</item>
+        <item>30 menit</item>
+    </array>
+    <array name="sort_appointment">
+        <item>Sortir dengan</item>
+        <item>ID</item>
+        <item>Penulis</item>
+        <item>Judul</item>
+    </array>
+    <string name="title_activity_advance_search">Pencarian Lanjutan</string>
+    <string name="about_us">Tentang kami</string>
+    <string name="contact_us">Hubungi kami</string>
+    <string name="help_support">Bantuan &amp; Dukungan</string>
+    <string name="terms_of_use">Syarat Penggunaan</string>
+    <string name="advance_search">Pencarian Lanjutan</string>
+    <string name="all_categories">Semua Kategori</string>
+    <string name="sign_in_now">Masuk sekarang</string>
+    <string name="logging_in">Masuk…</string>
+    <string name="sign_up">Mendaftar…</string>
+    <string name="register_now">Daftar sekarang</string>
+    <string name="required_field">Bagian ini diperlukan!</string>
+    <string name="featured_provider">Penyedia Jasa pilihan</string>
+    <string name="regular_single_user">Pengguna Jasa</string>
+    <string name="company_professional">Perusahaan / Profesional</string>
+    <string name="make_appointment">Buat janji</string>
+    <string name="tite_leave_review">Tinggalkan Review anda</string>
+    <string name="wizard_skip">Lewati</string>
+    <string name="wizard_join">Gabung</string>
+    <string name="tab_services">Jasa</string>
+    <string name="tab_business_hours">Jam kerja</string>
+    <string name="tab_experience">Pengalaman</string>
+    <string name="tab_qualification">Kualifikasi</string>
+    <string name="tab_certificates"><![CDATA[Sertifikat & Penghargaan]]></string>
+    <string name="tab_languages">Bahasa</string>
+    <string name="tab_amenities"><![CDATA[Fasilitas & Fitur]]></string>
+    <string name="err_login_first">Silahkan login terlebih dahulu untuk booking.</string>
+    <string name="err_login_to_review">Silahkan login terlebih dahulu untuk meninggalkan review.</string>
+    <string name="tab_appointments">Pertemuan saya</string>
+    <string name="tab_contact_us">Hubungi kami</string>
+    <string name="msg_logout">Anda yakin ingin Keluar?</string>
+    <string name="title_yes">Iya nih</string>
+    <string name="title_no">Tidak</string>
+    <string name="title_category">Kategori</string>
+    <string name="title_country">Negara</string>
+    <string name="title_city">Kota</string>
+    <string name="title_sub_category">Sub Kategori</string>
+    <string name="msg_select_category">Silahkan pilih kategori terlebih dahulu</string>
+    <string name="msg_select_country">Silahkan pilih negara terlebih dahulu</string>
+    <string name="err_something_wrong">Ada yang salah. Silakan periksa koneksi internet anda dan coba lagi nanti!</string>
+    <string name="msg_finalizing_appointment">Finalisasi Booking…</string>
+    <string name="msg_phone_verification">Memverifikasi Nomor Telepon…</string>
+    <string name="code_not_valid">Kode verifikasi tidak valid!</string>
+    <string name="set_location">Set Lokasi</string>
+    <string name="welcome_amp_greetings"><![CDATA[Selamat datang & salam]]></string>
+    <string name="an_ultimate_directory_for_service_providers">Lokak Jasa dan Pekerjaan Profesional</string>
+    <string name="register_as">Daftar sebagai:</string>
+    <string name="your_name">Nama</string>
+    <string name="msg_business">Bisnis</string>
+    <string name="msg_professional">Profesional</string>
+    <string name="msg_company_title">Nama Perusahaan</string>
+    <string name="msg_phone">Telepon</string>
+    <string name="hint_retype_password">Ketik ulang kata sandi</string>
+    <string name="btn_register_now">Daftar sekarang</string>
+    <string name="hint_category">Kategori:</string>
+    <string name="start_your_search">Mulai Pencarian Anda</string>
+    <string name="hint_keyword">Kata kunci</string>
+    <string name="title_view_all"><![CDATA[Lihat semua]]></string>
+    <string name="title_featured_listing">Daftar Unggulan</string>
+    <string name="title_top_categories">Kategori teratas</string>
+    <string name="title_advanced_search">Pencarian Lanjutan</string>
+    <string name="title_search_now">Cari sekarang</string>
+    <string name="title_register">Daftar</string>
+    <string name="title_login">Masuk</string>
+    <string name="title_my_appointments">Pertemuan Saya</string>
+    <string name="title_about_us">Tentang kami</string>
+    <string name="title_terms_of_use">Syarat Penggunaan</string>
+    <string name="title_help_amp_support"><![CDATA[Bantuan & Support]]></string>
+    <string name="title_contact_support">Kontak Support</string>
+    <string name="title_invite">Undang teman</string>
+    <string name="title_rate">Nilai aplikasi ini</string>
+    <string name="title_logout">Keluar</string>
+    <string name="title_general">Umum</string>
+    <string name="title_dashboard">Dasbor</string>
+    <string name="title_services">Jasa</string>
+    <string name="title_appointment_type">Jenis Booking</string>
+    <string name="title_appointment_reason">Alasan Booking</string>
+
+    <string name="title_manage_services">Kelola Layanan</string>
+    <string name="title_manage_team">Kelola Tim</string>
+    <string name="title_manage_jobs">Kelola Pekerjaan</string>
+    <string name="title_manage_articles">Kelola Pekerjaan</string>
+    <string name="title_manage_appointments">Kelola Pertemuan</string>
+    <string name="title_favorite_listing">Daftar Favorit</string>
+    <string name="title_security_setting">Pengaturan Keamanan</string>
+    <string name="title_privacy_setting">Pengaturan Privasi</string>
+
+    <string name="no_vote">(0 suara)</string>
+    <string name="make_appointement">Buat Jadwal Panggilan</string>
+    <string name="txt_call">Hubungi:&#160;</string>
+    <string name="txt_search_by_keyword">Cari menggunakan kata kunci</string>
+    <string name="title_website">Situs web</string>
+    <string name="title_email">Email</string>
+    <string name="select_time_slot">Silahkan pilih slot waktu!</string>
+    <string name="msg_book_appointment">Booking Pertemuan…</string>
+    <string name="select_appointment_date">Pilih Tanggal Pertemuan</string>
+    <string name="select_appointment_time">Pilih Waktu Pertemuan</string>
+    <string name="start_booking">Mulai Booking</string>
+    <string name="txt_space_left">Ruang tersisa:&#160;</string>
+    <string name="waiting_for_automatically_detect_an_sms_sent_to">Menunggu secara otomatis mendeteksi SMS yang dikirim ke</string>
+    <string name="verify">Memeriksa</string>
+    <string name="enter_code_here">Masukkan kode di sini</string>
+    <string name="title_resend">Kirim ulang</string>
+    <string name="title_verify">Memeriksa</string>
+    <string name="enter_keyword">Masukkan kata kunci</string>
+    <string name="search_by_category">Cari berdasarkan Kategori</string>
+    <string name="category">Kategori:</string>
+    <string name="sub_category">Sub Kategori:</string>
+    <string name="search_by_location">Cari Berdasarkan Lokasi</string>
+    <string name="city">Kota:</string>
+    <string name="enter_zip_code">Masukkan Kode Pos</string>
+    <string name="search">Pencarian</string>
+    <string name="distance_in_miles">Jarak dalam ( Mil )&#160;</string>
+    <string name="msg_exit">Anda yakin ingin keluar?</string>
+    <string name="last_name">Nama Belakang</string>
+    <string name="first_name">Nama Depan</string>
+    <string name="version">Versi &#160;</string>
+    <string name="copyright_2017_the_listingo">Hak Cipta @ 2017 Lokak Indonesia</string>
+    <string name="title_introduction">Pengantar</string>
+    <string name="btn_direction">Arah</string>
+    <string name="who_we_are_amp_what_we_do"><![CDATA[Siapa kami dan apa yang kami lakukan?]]></string>
+    <string name="txt_services">Jasa</string>
+    <string name="txt_business_hours">Jam kerja</string>
+    <string name="txt_experience">Pengalaman</string>
+    <string name="txt_qualification">Kualifikasi</string>
+    <string name="txt_certificates_amp_awards"><![CDATA[Sertifikat & Penghargaan]]></string>
+    <string name="txt_our_team">Tim kami</string>
+    <string name="txt_languages">Bahasa</string>
+    <string name="txt_amenities_amp_features"><![CDATA[Fasilitas & Fitur]]></string>
+    <string name="txt_media">Media</string>
+    <string name="txt_downloads">Download</string>
+    <string name="txt_contact_us">Hubungi kami</string>
+    <string name="dlg_msg_submit_review">Mengirimkan ulasan…</string>
+    <string name="msg_select_wait_time">Silakan pilih waktu tunggu</string>
+    <string name="review_title">Tinjau judul</string>
+    <string name="would_your_recommend">Berikan rekomendasi anda</string>
+    <string name="btn_yes">iya nih</string>
+    <string name="btn_no">Tidak</string>
+    <string name="filter_by_date">Filter berdasarkan tanggal</string>
+    <string name="click_to_update_now_button_to_n_update_the_latest_added_details">Klik Untuk Memperbarui Sekarang Tombol Untuk  \n Update Rincian Ditambahkan Terbaru</string>
+
+    <string name="description">Deskripsi</string>
+
+    <string name="title_leave_your_rating">Tinggalkan Rating Anda</string>
+    <string name="title_ease_of_appointment">Kemudahan Pertemuan</string>
+    <string name="title_promptness">Kecepatan</string>
+    <string name="title_courteous_staff">Staf yang sopan</string>
+    <string name="title_accurate_diagnosis">Diagnosa yang Akurat</string>
+    <string name="title_professional_manner">Profesional</string>
+    <string name="title_spends_time_with_me">Membuang Waktu Saya</string>
+    <string name="title_follow_up_after_visit">Tindak Lanjut Setelah Kunjungan</string>
+    <string name="title_work_knowledge">Berpengalaman</string>
+    <string name="btn_submit">Submit</string>
+
+    <string name="msg_update_services">Memperbarui Layanan…</string>
+
+    <array name="service_price_type">
+        <item>Pilih jenis harga</item>
+        <item>jam</item>
+        <item>kunjungan</item>
+    </array>
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="title_home">Home</string>
+    <string name="err_login_to_fvrt">Please login to add user in favorite list.</string>
+    <string name="title_jobs">Jobs</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="msg_updating_fvrt">Updating favorites…</string>
+    <string name="msg_updating_privacy">Updating privacy…</string>
+    <string name="reject_appointment">Reject Appointment</string>
+    <string name="fetching_appointments">Fetching Appointments…</string>
+    <string name="click_to_update_privacy">Click To \"Update Privacy\" Button To \n Update The Latest Settings</string>
+    <string name="click_to_update">Click To \"Update Now\" Button To \n Update The Latest Settings</string>
+    <string name="update_privacy">Update Privacy</string>
+    <string name="tlt_make_profile_photo_public">Make Profile Photo Public</string>
+    <string name="tlt_make_banner_photo_public">Make banner Photo Public</string>
+    <string name="tlt_appointment_option">Appointment Option</string>
+    <string name="tlt_contact_form">Contact Form</string>
+    <string name="tlt_business_hours">Business Hours</string>
+    <string name="tlt_show_services">Show Services</string>
+    <string name="tlt_show_team">Show Team</string>
+    <string name="tlt_show_gallery">Show Gallery</string>
+    <string name="tlt_show_videos">Show Videos</string>
+    <string name="loading_settings">Loading Settings…</string>
+    <string name="no_record_found">No record Found</string>
+    <string name="update_now">Update Now</string>
+    <string name="select">Select</string>
+    <string name="clear_selection">Clear Selection</string>
+    <string name="no_data_available">No data available</string>
+    <string name="phone_num_verification">Phone Number Verification</string>
+    <string name="add_new">Add New +</string>
+
+</resources>

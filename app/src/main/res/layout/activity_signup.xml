@@ -1,0 +1,298 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_background" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/background"
+            android:elevation="10dp"
+            app:cardCornerRadius="7dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/register_single_user"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regular_single_user"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/font_medium"
+                        android:minLines="2"
+                        android:background="@drawable/signup_button_background_state"
+                        android:textSize="14sp"
+                        android:layout_weight="50" />
+
+                    <Button
+                        android:id="@+id/register_business"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:textAllCaps="false"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/font_medium"
+                        android:background="@drawable/signup_button_background_state"
+                        android:text="@string/company_professional"
+                        android:layout_weight="50" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/register_type_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/register_as"
+                        android:fontFamily="@font/font_medium"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp" />
+
+                    <RadioGroup
+                        android:id="@+id/register_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <RadioButton
+                            android:id="@+id/radio_business"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:layout_gravity="start|center"
+                            android:layout_weight="50"
+                            android:checked="true"
+                            android:textDirection="locale"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="@font/font_regular"
+                            android:buttonTint="@color/colorPrimary"
+                            android:text="@string/msg_business"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_professional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="50"
+                            android:textDirection="locale"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="@font/font_regular"
+                            android:buttonTint="@color/colorPrimary"
+                            android:checked="false"
+                            android:text="@string/msg_professional"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/login_backgroind"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/register_category_view"
+                        layout="@layout/ui_signup_category" />
+
+                    <EditText
+                        android:id="@+id/register_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/your_name"
+                        android:fontFamily="@font/font_regular"
+                        android:imeActionId="@+id/login"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp" />
+
+
+                    <include
+                        android:id="@+id/register_names"
+                        layout="@layout/ui_signup_name_fields"
+                        android:visibility="gone" />
+
+                    <include layout="@layout/layout_single_line" />
+
+                    <EditText
+                        android:id="@+id/register_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/msg_company_title"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/font_regular"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp" />
+
+                    <include
+                        android:id="@+id/single_line_phone"
+                        layout="@layout/layout_single_line" />
+
+                    <EditText
+                        android:id="@+id/register_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/msg_phone"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/font_regular"
+                        android:inputType="phone"
+                        android:padding="10dp" />
+
+                    <include layout="@layout/layout_single_line" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/register_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_gravity="top"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/prompt_email"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/font_regular"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp" />
+
+                    <include layout="@layout/layout_single_line" />
+
+                    <EditText
+                        android:id="@+id/register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/prompt_password"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:fontFamily="@font/font_regular"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp" />
+
+                    <include layout="@layout/layout_single_line" />
+
+                    <EditText
+                        android:id="@+id/register_retype_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/field_height"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_retype_password"
+                        android:fontFamily="@font/font_regular"
+                        android:imeActionId="@+id/login"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/terms_condition"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="center"
+                    android:text="@string/you_agree_to_comply_with_the_supplemental_terms_amp_conditions_set_forth_in_this_agreement" />
+
+                <Button
+                    android:id="@+id/register_submit"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/font_regular"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/btn_register_now"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:text="@string/already_have_and_account_create_account"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</ScrollView>

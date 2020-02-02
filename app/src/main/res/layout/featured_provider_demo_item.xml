@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/tw__transparent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tw__transparent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/provider_thumbail"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/demo_item"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__transparent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/provider_category"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:maxLines="2"
+                android:minLines="2"
+                android:fontFamily="@font/font_regular"
+                android:background="@color/demo_item"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/provider_company"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="1dp"
+                android:maxLines="2"
+                android:background="@color/demo_item"
+                android:minLines="2"
+                android:fontFamily="@font/font_medium"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/provider_rating"
+                style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+                android:layout_width="80dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginRight="-3dp"
+                android:rating="0"
+                android:visibility="visible"
+                android:stepSize="0.01"
+                android:layout_marginEnd="-3dp"
+                android:layout_marginStart="-3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/provider_rating_votes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/demo_item"
+                    android:fontFamily="@font/font_medium"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/icons_container"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="end"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_bookmark"
+                    android:layout_margin="5dp"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_bookmark"
+                    android:layout_margin="5dp"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_heart"
+                    android:layout_margin="5dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

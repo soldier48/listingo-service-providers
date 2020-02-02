@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">Service Provider</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Inicia Sesión</string>
+    <string name="action_join">Únete Ahora</string>
+    <string name="action_sign_in_short">Inicia Sesión</string>
+    <string name="error_invalid_email">Este Email es inválido</string>
+    <string name="error_invalid_password">Este Password es muy corto</string>
+    <string name="error_incorrect_password">El password es incorrecto</string>
+    <string name="error_field_required">Este Campo es requerido</string>
+    <string name="permission_rationale">"Permisos de contacto son requeridos para completar
+        email."
+    </string>
+    <string name="title_activity_navigation_drawer">Inicio</string>
+
+    <string name="navigation_drawer_open">Abrir Dibujo de Navegación</string>
+    <string name="navigation_drawer_close">Cerrar Dibujo de Navegación</string>
+
+    <string name="action_settings">Ajustes</string>
+
+    <string name="title_activity_wizard_activty">Asistente de Actividad</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="do_not_have_and_account_create_account">No tienes cuenta? <b> Crea una </b></string>
+    <string name="already_have_and_account_create_account">Ya tienes cuenta? <b> Inicia Sesión </b></string>
+    <string name="forgot_your_password">Olvidaste tu Password?</string>
+
+    <string name="password_reset_link">La liga para reestablecer tu password será enviada después de hacer clic en Recuperar</string>
+    <string name="you_agree_to_comply_with_the_supplemental_terms_amp_conditions_set_forth_in_this_agreement"><![CDATA[You agree to comply with the supplemental Terms & Conditions set forth in this agreement]]></string>
+
+    <array name="business_category">
+        <item>Categoría de Negocio</item>
+    </array>
+
+
+    <array name="business_sub_category">
+        <item>Sub Categoría de Negocio</item>
+    </array>
+    <array name="business_gender">
+        <item>Género</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </array>
+    <array name="review_time">
+        <item>Tiempo total de espera</item>
+        <item>15 Minutos</item>
+        <item>20 Minutos</item>
+        <item>30 Minutos</item>
+    </array>
+    <array name="sort_appointment">
+        <item>Ordenar Por:</item>
+        <item>ID</item>
+        <item>Autor</item>
+    </array>
+    <string name="title_activity_advance_search">BúsquedaAvanzada</string>
+    <string name="about_us">Nosotros</string>
+    <string name="contact_us">Contacto</string>
+    <string name="help_support">Soporte</string>
+    <string name="terms_of_use">Terminos de uso</string>
+    <string name="advance_search">Búsqueda Avanzada</string>
+    <string name="all_categories">Todas las Categorías</string>
+    <string name="sign_in_now">Inicia Sesión Ahora</string>
+    <string name="logging_in">Iniciando Sesión…</string>
+    <string name="sign_up">Registrando…</string>
+    <string name="register_now">Registrate Ahora</string>
+    <string name="required_field">Este campo es requerido!</string>
+    <string name="featured_provider">Proveedores Destacados</string>
+    <string name="regular_single_user">Usuario Regular</string>
+    <string name="company_professional">Compañía / Profesionista</string>
+    <string name="make_appointment">Haz una agenda</string>
+    <string name="tite_leave_review">Deja tu reseña</string>
+    <string name="wizard_skip">Saltar</string>
+    <string name="wizard_join">Unirse</string>
+    <string name="tab_services">Servicios</string>
+    <string name="tab_business_hours">Horas de Trabajo</string>
+    <string name="tab_experience">Experiencia</string>
+    <string name="tab_qualification">Calificación</string>
+    <string name="tab_certificates"><![CDATA[Certificados]]></string>
+    <string name="tab_languages">Idiomas</string>
+    <string name="tab_amenities"><![CDATA[Características]]></string>
+    <string name="err_login_first">Inicia sesión primero para agendar.</string>
+    <string name="err_login_to_review">Inicia sesión primero para dejar una reseña.</string>
+    <string name="err_login_to_fvrt">Inicia sesión para agregar a favoritos.</string>
+    <string name="tab_appointments">Mis agendas</string>
+    <string name="tab_contact_us">Contáctanos</string>
+    <string name="msg_logout">Seguro que deseas salir?</string>
+    <string name="title_yes">Si</string>
+    <string name="title_no">No</string>
+    <string name="title_category">Categoría</string>
+    <string name="title_country">País</string>
+    <string name="title_city">Ciudad</string>
+    <string name="title_sub_category">Sub Categoría</string>
+    <string name="msg_select_category">Selecciona una categoría primero</string>
+    <string name="msg_select_country">Selecciona un país primero</string>
+    <string name="err_something_wrong">Algo salió mal. Comprueba tu conexión a internet e intenta más tarde!</string>
+    <string name="msg_finalizing_appointment">Finalizando Agenda…</string>
+    <string name="msg_phone_verification">Verificando número de teléfono…</string>
+    <string name="code_not_valid">El código ingresado no es válido!</string>
+    <string name="set_location">Ajusta la ubicación</string>
+    <string name="welcome_amp_greetings"><![CDATA[Saludos y Bienvenido!]]></string>
+    <string name="an_ultimate_directory_for_service_providers">Experts a Click Away!</string>
+    <string name="register_as">Registrarse como:</string>
+    <string name="your_name">Tu Nombre</string>
+    <string name="msg_business">Negocio</string>
+    <string name="msg_professional">Profesionista</string>
+    <string name="msg_company_title">Nombre de Compañía</string>
+    <string name="msg_phone">Teléfono</string>
+    <string name="hint_retype_password">Repetir Password</string>
+    <string name="btn_register_now">Registrarse</string>
+    <string name="hint_category">Categoría:</string>
+    <string name="start_your_search">Comienza a Buscar</string>
+    <string name="hint_keyword">Palabra Clave</string>
+    <string name="title_view_all"><![CDATA[Ver Todos]]></string>
+    <string name="title_featured_listing">Listas Destacadas</string>
+    <string name="title_top_categories">Categorías Top</string>
+    <string name="title_advanced_search">Búsqueda Avanzada</string>
+    <string name="title_search_now">Buscar</string>
+    <string name="title_register">Registrar</string>
+    <string name="title_login">Iniciar Sesión</string>
+    <string name="title_my_appointments">Mis Agendas</string>
+    <string name="title_jobs">Trabajos</string>
+    <string name="title_about_us">Nosotros</string>
+    <string name="title_terms_of_use">Terminos de uso</string>
+    <string name="title_help_amp_support"><![CDATA[Soporte]]></string>
+    <string name="title_contact_support">Contacto a Soporte</string>
+    <string name="title_invite">Invitar Amigos</string>
+    <string name="title_rate">Puntua esta App</string>
+    <string name="title_logout">Cerrar Sesión</string>
+    <string name="title_general">General</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_services">Servicios</string>
+    <string name="title_appointment_type">Tipo de Agenda</string>
+    <string name="title_appointment_reason">Razón de Agenda</string>
+
+    <string name="title_manage_services">Administrar Servicios</string>
+    <string name="title_manage_team">Administrar Equipo</string>
+    <string name="title_manage_jobs">Administrar Trabajos</string>
+    <string name="title_manage_articles">Administrar Artículos</string>
+    <string name="title_manage_appointments">Administrar Agenda</string>
+    <string name="title_favorite_listing">Listar Favoritos</string>
+    <string name="title_security_setting">Ajustes de Seguridad</string>
+    <string name="title_privacy_setting">Ajustes de Privacidad</string>
+
+    <string name="no_vote">(0 votos)</string>
+    <string name="make_appointement">Crea una Agenda</string>
+    <string name="txt_call">Llamar:&#160;</string>
+    <string name="txt_search_by_keyword">Buscar por palabra</string>
+    <string name="title_website">Sitio Web</string>
+    <string name="title_email">Email</string>
+    <string name="select_time_slot">Selecciona una fecha!</string>
+    <string name="msg_book_appointment">Agendando…</string>
+    <string name="select_appointment_date">Selecciona fecha para la agenda</string>
+    <string name="select_appointment_time">Selecciona hora para la agenda</string>
+    <string name="start_booking">Comienza a agendar</string>
+    <string name="txt_space_left">Espacios disponibles:&#160;</string>
+    <string name="waiting_for_automatically_detect_an_sms_sent_to">Esperando para detectar automaticamente un SMS a</string>
+    <string name="verify">Verificar</string>
+    <string name="enter_code_here">Ingres el código aquí</string>
+    <string name="title_resend">Reenviar</string>
+    <string name="title_verify">Verificar</string>
+    <string name="enter_keyword">Ingresa Palabra Clave</string>
+    <string name="search_by_category">Buscar por categoría</string>
+    <string name="category">Categoría:</string>
+    <string name="sub_category">Sub Categoría:</string>
+    <string name="search_by_location">Buscar por ubicación</string>
+    <string name="city">Ciudad:</string>
+    <string name="enter_zip_code">Ingresa Código Postal</string>
+    <string name="search">Buscar</string>
+    <string name="distance_in_miles">Distancia en ( Millas )&#160;</string>
+    <string name="msg_exit">Seguro que desea salir?</string>
+    <string name="last_name">Apellidos</string>
+    <string name="first_name">Nombre</string>
+    <string name="version">Version &#160;</string>
+    <string name="copyright_2017_the_listingo">Copyright @ 2018 Hand By Hand</string>
+    <string name="title_introduction">Introducción</string>
+    <string name="btn_direction">Dirección</string>
+    <string name="who_we_are_amp_what_we_do"><![CDATA[Quienes somos y qué hacemos?]]></string>
+    <string name="txt_services">Servicios</string>
+    <string name="txt_business_hours">Horas de Trabajo</string>
+    <string name="txt_experience">Experiencia</string>
+    <string name="txt_qualification">Calificación</string>
+    <string name="txt_certificates_amp_awards"><![CDATA[Certificados]]></string>
+    <string name="txt_our_team">Nuestro Equipo</string>
+    <string name="txt_languages">Idiomas</string>
+    <string name="txt_amenities_amp_features"><![CDATA[Características]]></string>
+    <string name="txt_media">Media</string>
+    <string name="txt_downloads">Descargas</string>
+    <string name="txt_contact_us">Contáctanos</string>
+    <string name="dlg_msg_submit_review">Enviando reseña…</string>
+    <string name="msg_select_wait_time">Selecciona un tiempo de espera</string>
+    <string name="review_title">Título de reseña</string>
+    <string name="would_your_recommend">Lo recomendarías?</string>
+    <string name="btn_yes">Si</string>
+    <string name="btn_no">No</string>
+    <string name="filter_by_date">Filtrar por Fecha</string>
+    <string name="click_to_update_now_button_to_n_update_the_latest_added_details">Click para actualizar ahora botón a  \n Actualizar los últimos detalles</string>
+
+    <string name="description">Descripción</string>
+
+    <string name="title_leave_your_rating">Deja tu calificación</string>
+    <string name="title_ease_of_appointment">Facilitar agenda</string>
+    <string name="title_promptness">Agilidad</string>
+    <string name="title_courteous_staff">Equipo Cortés</string>
+    <string name="title_accurate_diagnosis">Diagnóstico preciso</string>
+    <string name="title_professional_manner">Métodos profesionales</string>
+    <string name="title_spends_time_with_me">Pasa tiempo con nosotros</string>
+    <string name="title_follow_up_after_visit">Seguimiento post visita</string>
+    <string name="title_work_knowledge">Conocimiento del Trabajo</string>
+    <string name="btn_submit">Enviar</string>
+
+    <plurals name="numberOfVotes">
+        <item quantity="one">&#160;voto</item>
+        <item quantity="other">&#160;votos</item>
+    </plurals>
+
+    <string name="msg_update_services">Actualizando servicios…</string>
+    <string name="title_reviews">Reseñas</string>
+    <string name="msg_updating_fvrt">Actualizando Favoritos…</string>
+    <string name="msg_updating_privacy">Actualizando privacidad…</string>
+
+    <string name="title_home">Inicio</string>
+    <string name="reject_appointment">Rechazar agenda</string>
+    <string name="fetching_appointments">Mostrando agendas…</string>
+
+    <string name="click_to_update_privacy">Click Para \"Actualizar privacidad\" Boton para \n Actualizar los últimos ajustes</string>
+    <string name="click_to_update">Click Para \"Actualizar ahora\" Botón Para \n Actualizar los últimos ajustes</string>
+
+    <string name="update_privacy">Actualizar Privacidad</string>
+    <string name="tlt_make_profile_photo_public">Hacer Pública Foto de Perfil</string>
+    <string name="tlt_make_banner_photo_public">Hacer Público Foto de Banner</string>
+    <string name="tlt_appointment_option">Opción de Agenda</string>
+    <string name="tlt_contact_form">Formulario de Contacto</string>
+    <string name="tlt_business_hours">Horas de Trabajo</string>
+    <string name="tlt_show_services">Mostrar Servicios</string>
+    <string name="tlt_show_team">Mostrar Equipo</string>
+    <string name="tlt_show_gallery">Mostrar Galería</string>
+    <string name="tlt_show_videos">Mostrar Videos</string>
+    <string name="loading_settings">Cargando Ajustes…</string>
+    <string name="no_record_found">Sin resultados</string>
+    <string name="update_now">Actualizar</string>
+    <string name="select">Select</string>
+    <string name="clear_selection">Clear Selection</string>
+    <string name="no_data_available">No data available</string>
+    <string name="phone_num_verification">Phone Number Verification</string>
+    <string name="add_new">Add New +</string>
+
+    <array name="service_price_type">
+        <item>Elegir tipo de precio</item>
+        <item>hora</item>
+        <item>visita</item>
+    </array>
+</resources>

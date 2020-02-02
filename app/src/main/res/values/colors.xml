@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#57c878</color>
+    <color name="colorPrimaryDark">#46a060</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="background">#f7f7f7</color>
+    <color name="single_line">#dddddd</color>
+    <color name="detail_screen_text">#139ff2</color>
+    <color name="hint_color">@android:color/darker_gray</color>
+    <color name="view_all">#64B5F6</color>
+    <color name="text_color">#484848</color>
+    <color name="demo_item">#d8d8d8</color>
+    <color name="light_grey">#cccccc</color>
+    <color name="tw__transparent">#00000000</color>
+
+</resources>

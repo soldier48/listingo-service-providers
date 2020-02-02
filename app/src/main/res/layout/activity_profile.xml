@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="Upload Profile Photo/Logo"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@drawable/layout_background">
+
+            <TextView
+                android:id="@+id/txt_add_photo"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/click_to_add_photo"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_add_photo"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_add_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:text="@string/title_add_photo"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_profile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:nestedScrollingEnabled="true"
+            android:layout_marginTop="@dimen/margin_10dp" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="@string/title_upload_banner"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@drawable/layout_background">
+
+            <TextView
+                android:id="@+id/txt_add_banner"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/click_to_add_banner"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_add_banner"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_add_banner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:text="@string/title_add_photo"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:nestedScrollingEnabled="true"
+
+           />
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="@string/title_introduction"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <EditText
+                android:id="@+id/edtxt_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/layout_margin"
+                android:background="@drawable/spinner_background"
+                android:fontFamily="@font/font_opensans"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:gravity="top"
+                android:hint="@string/description"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textSize="16sp"
+
+                />
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="@string/title_select_categories"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/spinner_background">
+
+                    <Spinner
+                        android:id="@+id/spn_add_categories"
+                        style="@android:style/Widget.Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/spinner_icon"
+                        android:entries="@array/categories"
+                        android:fontFamily="@font/font_regular" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add_categories"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="@string/title_add_now"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_categories"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:nestedScrollingEnabled="false" />
+
+            <com.cunoraz.tagview.TagView
+                xmlns:tagview="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tag_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                tagview:lineMargin="5dp"
+                tagview:tagMargin="5dp"
+                tagview:textPaddingLeft="8dp"
+                tagview:textPaddingTop="5dp"
+                tagview:textPaddingRight="8dp"
+                tagview:textPaddingBottom="5dp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:text="@string/title_basic_information"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/login_backgroind"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/info_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/first_name"
+                     
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <EditText
+                    android:id="@+id/info_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/last_name"
+                     
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <Spinner
+                    android:id="@+id/info_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:visibility="gone"
+                    style="@android:style/Widget.Spinner"
+                    android:background="@drawable/spinner_icon"
+                    android:entries="@array/basic_info_gender"
+                    android:fontFamily="@font/font_regular"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+
+                <EditText
+                    android:id="@+id/info_tagline"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/title_tagline"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include
+                    android:id="@+id/single_line_phone"
+                    layout="@layout/layout_single_line" />
+
+                <EditText
+                    android:id="@+id/info_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/msg_phone"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+
+                <EditText
+                    android:id="@+id/info_zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/title_zip"
+                     
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <EditText
+                    android:id="@+id/info_fax"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/title_fax"
+                     
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <EditText
+                    android:id="@+id/info_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:hint="@string/title_url"
+                     
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <EditText
+                    android:id="@+id/info_short_descrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/font_opensans"
+                    android:gravity="top"
+                    android:hint="@string/title_short_descrip"
+                     
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:text="@string/title_location"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:background="@drawable/spinner_background"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/info_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:background="@android:color/white"
+                    android:ellipsize="end"
+                    android:focusedByDefault="false"
+                    android:fontFamily="@font/font_opensans"
+                    android:gravity="start"
+                    android:hint="@string/hint_enter_location"
+                    android:maxLines="1"
+                    android:textSize="17sp"
+                    android:padding="7dp"
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale" />
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    app:srcCompat="@drawable/ic_crosshairs" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/title_imp_instructions"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/location_note"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/login_backgroind"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/info_latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:focusedByDefault="false"
+                    android:fontFamily="@font/font_opensans"
+                    android:gravity="start"
+                    android:hint="@string/hint_lattitude"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/info_longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_50dp"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:focusedByDefault="false"
+                    android:fontFamily="@font/font_opensans"
+                    android:gravity="start"
+                    android:hint="@string/hint_longitude"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@color/hint_color"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <Spinner
+                    android:id="@+id/info_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    style="@android:style/Widget.Spinner"
+                    android:background="@drawable/spinner_icon"
+                    android:entries="@array/basic_info_country"
+                    android:fontFamily="@font/font_regular"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <Spinner
+                    android:id="@+id/info_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    style="@android:style/Widget.Spinner"
+                    android:background="@drawable/spinner_icon"
+                    android:entries="@array/basic_info_city"
+                    android:fontFamily="@font/font_regular"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:context=".MapsActivity" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:background="@color/background"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center|start"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+
+            android:text="@string/title_languages"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/layout_single_line"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/spinner_background">
+
+                    <Spinner
+                        android:id="@+id/spn_languages"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/spinner_icon"
+                        android:entries="@array/categories"
+                        android:fontFamily="@font/font_regular" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_add_languages"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:text="@string/title_add_now"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_languages"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@color/background">
+
+            <TextView
+                android:id="@+id/txt_update"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/font_medium"
+                android:text="@string/click_to_update_profile"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_update"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:text="@string/title_update_now"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_single_line" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/service_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/field_height"
+            android:drawableLeft="@drawable/ic_menu"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_menu"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_medium"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="16sp"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp" />
+
+        <ImageView
+            android:id="@+id/service_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/service_title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/service_title"
+            android:layout_centerInParent="true"
+            android:background="@android:color/holo_red_dark"
+            android:padding="15dp"
+            app:srcCompat="@drawable/ic_trash"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangle_background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_service_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:background="@color/tw__transparent"
+
+            android:fontFamily="@font/font_opensans"
+            android:hint="Service Title"
+            android:padding="10dp" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <EditText
+            android:id="@+id/edit_service_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:background="@color/tw__transparent"
+
+            android:fontFamily="@font/font_opensans"
+            android:hint="Service Price"
+            android:padding="10dp" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <Spinner
+            android:id="@+id/edit_service_price_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:background="@drawable/spinner_icon"
+
+            android:entries="@array/service_price_type"
+            android:fontFamily="@font/font_opensans" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <EditText
+            android:id="@+id/edit_service_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__transparent"
+            android:fontFamily="@font/font_opensans"
+
+            android:gravity="start"
+            android:hint="Description"
+            android:minLines="5"
+            android:padding="10dp" />
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/manage_service_appointment_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Add this service in appointment list" />
+
+    <CheckBox
+        android:id="@+id/manage_service_free_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="This is a free service" />
+
+</LinearLayout>

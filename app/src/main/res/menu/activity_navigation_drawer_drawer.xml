@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard_item"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:title="@string/title_dashboard">
+        <menu>
+            <group
+                android:id="@+id/nav_dashboard"
+
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_business_hours"
+                    android:icon="@drawable/ic_clock"
+                    android:title="@string/txt_business_hours" />
+                <item
+                    android:id="@+id/nav_manage_services"
+                    android:icon="@drawable/ic_services"
+                    android:title="@string/title_manage_services" />
+                <item
+                    android:id="@+id/nav_manage_team"
+                    android:icon="@drawable/ic_users"
+                    android:title="@string/title_manage_team"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_manage_jobs"
+                    android:icon="@drawable/ic_star"
+                    android:title="@string/title_manage_jobs"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_manage_articles"
+                    android:icon="@drawable/ic_hourglass"
+                    android:title="@string/title_manage_articles"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_manage_appointment"
+                    android:icon="@drawable/ic_appointment"
+                    android:title="@string/title_manage_appointments" />
+
+                <item
+                    android:id="@+id/nav_security_settings"
+                    android:icon="@drawable/ic_phone_handset"
+                    android:title="@string/title_security_setting"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_privacy_settings"
+                    android:icon="@drawable/ic_eye"
+                    android:title="@string/title_privacy_setting" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:title="@string/title_general">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_register"
+                    android:icon="@drawable/ic_lock"
+                    android:title="@string/title_register" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_enter"
+                    android:title="@string/title_login" />
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/title_activity_navigation_drawer" />
+                <item
+                    android:id="@+id/nav_nearby"
+                    android:icon="@drawable/ic_location_pin"
+                    android:title="Nearby" />
+                <item
+                    android:id="@+id/nav_inbox"
+                    android:icon="@drawable/ic_envelope"
+                    android:title="Inbox" />
+                <item
+                    android:id="@+id/nav_manage_profile"
+                    android:icon="@drawable/ic_avatar"
+                    android:title="Manage Profile" />
+                <item
+                    android:id="@+id/nav_package"
+                    android:icon="@drawable/ic_home"
+                    android:visible="false"
+                    android:title="Update Package" />
+                <item
+                    android:id="@+id/nav_favorites_listing"
+                    android:icon="@drawable/ic_heart"
+                    android:title="@string/title_favorite_listing" />
+                <item
+                    android:id="@+id/nav_appointments"
+                    android:icon="@drawable/ic_appointment"
+                    android:title="@string/title_my_appointments" />
+                <item
+                    android:id="@+id/nav_jobs"
+                    android:icon="@drawable/ic_star"
+                    android:title="@string/title_jobs" />
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:icon="@drawable/ic_bullhorn"
+                    android:title="@string/title_about_us"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_term_of_use"
+                    android:icon="@drawable/ic_hourglass"
+                    android:title="@string/title_terms_of_use"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_help_support"
+                    android:icon="@drawable/ic_briefcase"
+                    android:title="@string/title_help_amp_support"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_contact_support"
+                    android:icon="@drawable/ic_phone_handset"
+                    android:title="@string/title_contact_support"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_invite"
+                    android:icon="@drawable/ic_envelope"
+                    android:title="@string/title_invite"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_rate"
+                    android:icon="@drawable/ic_thumbs_up"
+                    android:title="@string/title_rate"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_exit"
+                    android:title="@string/title_logout"
+                    android:visible="false" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="Other"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+
+        <menu>
+            <group >
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_services"
+                    android:title="@string/title_activity_settings"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+    <!-- <group android:id="@+id/nav_footer">
+            <item
+                android:id="@+id/nav_footer_1"
+                android:title="@string/copyright_2017_the_listingo" />
+        </group>-->
+</menu>

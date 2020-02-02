@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_monday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/font_opensans"
+                android:text="Monday"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_monday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hours_monday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/font_opensans"
+                android:text="Tuesday"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_tuesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+        <include
+            android:id="@+id/hours_tuesday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/font_opensans"
+                android:text="Wednesday"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_wednesday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hours_wednesday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_thursday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/font_opensans"
+                android:text="Thursday"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_thursday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hours_thursday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_friday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:fontFamily="@font/font_opensans"
+                android:text="Friday"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_friday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hours_friday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_saturday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:fontFamily="@font/font_opensans"
+                android:text="Saturday"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_sat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hours_saturday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/expand_sunday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:fontFamily="@font/font_opensans"
+                android:text="Sunday"
+                android:textDirection="locale"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/business_hour_sunday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/hours_sunday"
+            layout="@layout/ui_manage_add_business_hour"
+            android:visibility="gone" />
+
+        <include layout="@layout/layout_single_line" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/font_opensans"
+            android:gravity="center"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text="@string/click_to_update" />
+
+        <Button
+            android:id="@+id/business_hour_update"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/font_medium"
+            android:text="@string/update_now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

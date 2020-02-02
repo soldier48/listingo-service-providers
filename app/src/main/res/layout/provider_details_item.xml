@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:showIn="@layout/activity_provider_services">
+
+    <TextView
+        android:id="@+id/service_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/service_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/service_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/font_regular"
+        android:textSize="18sp" />
+</LinearLayout>
+
+
+        

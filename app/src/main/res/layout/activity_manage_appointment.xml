@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        tools:context="com.tregix.serviceprovider.activities.ManageAppointmentFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_medium"
+                android:text="Your Appointments"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/apt_filter_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:fontFamily="@font/font_medium"
+                android:text="Clear filter"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <include layout="@layout/layout_single_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/rectangle_background">
+
+                        <Spinner
+                            android:id="@+id/appointment_sort"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/field_height"
+                            android:background="@drawable/spinner_icon"
+                            android:entries="@array/sort_appointment"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/apt_filter_Date"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_margin="5dp"
+                        android:layout_weight="50"
+                        android:background="@drawable/button_background"
+                        android:drawableLeft="@drawable/ic_calendar_full"
+                        android:fontFamily="@font/font_opensans"
+                        android:paddingLeft="10dp"
+                        android:text="@string/filter_by_date"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:drawableStart="@drawable/ic_calendar_full"
+                        android:paddingStart="10dp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_single_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/list_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="No appointment yet"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

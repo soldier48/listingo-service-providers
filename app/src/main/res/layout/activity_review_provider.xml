@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/font_medium"
+            android:text="@string/tite_leave_review"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/review_wait_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:entries="@array/review_time"
+                    android:paddingLeft="@dimen/margin_10dp"
+                    android:paddingStart="@dimen/margin_10dp" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <EditText
+                    style="@style/AdvanceSearchEsitTextStyle"
+                    android:id="@+id/review_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/field_height"
+                    android:background="@color/tw__transparent"
+
+                    android:textColorHint="@android:color/black"
+                    android:hint="@string/review_title" />
+
+                <include layout="@layout/layout_single_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        style="@style/AdvanceSearchTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="70"
+                        android:gravity="center|start"
+                        android:textColorHint="@android:color/black"
+                        android:hint="@string/would_your_recommend"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/review_recommend_yes"
+
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_weight="15"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/btn_yes" />
+
+                    <Button
+                        android:id="@+id/review_recommend_no"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/field_height"
+                        android:layout_weight="15"
+                        android:background="@color/background"
+                        android:text="@string/btn_no" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_single_line" />
+
+                <EditText
+                    android:id="@+id/review_description"
+                    style="@style/AdvanceSearchTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColorHint="@android:color/black"
+                    android:hint="@string/description"
+                    android:background="@color/tw__transparent"
+
+                    android:minLines="5"
+                    android:paddingTop="@dimen/margin_10dp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/font_medium"
+            android:text="@string/title_leave_your_rating"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_rating_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/review_submit"
+            android:layout_width="200dp"
+            android:layout_height="@dimen/field_height"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:text="@string/btn_submit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView >

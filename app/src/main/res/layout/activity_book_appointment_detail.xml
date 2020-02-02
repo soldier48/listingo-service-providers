@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text="Appointment Information" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:id="@+id/search_category_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="30"
+                android:gravity="center|start"
+                android:hint="Service:"
+                android:paddingLeft="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="@dimen/margin_10dp"
+                android:textColorHint="#424242"
+                android:textSize="17sp"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:id="@+id/appointment_service"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableRight="@drawable/ic_chevron_right"
+                android:gravity="center|start"
+                android:padding="5dp"
+                android:textColor="#4dc176"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:id="@+id/appointment_type_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:weightSum="100">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="30"
+                android:gravity="center|start"
+                android:hint="Type:"
+                android:paddingLeft="10dp"
+                android:textColorHint="#424242"
+                android:textSize="17sp"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:id="@+id/appointment_type"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableRight="@drawable/ic_chevron_right"
+                android:gravity="center|start"
+                android:padding="5dp"
+                android:textColor="#4dc176"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:id="@+id/appointment_reason_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="30"
+                android:gravity="center|start"
+                android:hint="Reason:"
+                android:paddingLeft="10dp"
+                android:textColorHint="#424242"
+                android:textSize="17sp"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:id="@+id/appointment_reason"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_weight="70"
+                android:background="@android:color/white"
+                android:drawableEnd="@drawable/ic_chevron_right"
+                android:drawableRight="@drawable/ic_chevron_right"
+                android:gravity="center|start"
+                android:padding="5dp"
+                android:textColor="#4dc176"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_single_line" />
+
+
+        <EditText
+            android:id="@+id/appointment_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:gravity="start"
+            android:hint="Description"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:minLines="1"
+            android:padding="10dp"
+            android:text="" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text="Your Details" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <EditText
+            android:id="@+id/appointment_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:gravity="start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:hint="Name"
+            android:padding="10dp" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <EditText
+            android:id="@+id/appointment_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:gravity="start"
+            android:hint="Email"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <EditText
+            android:id="@+id/appointment_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:gravity="start"
+            android:hint="Phone"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:inputType="phone"
+            android:padding="10dp" />
+
+        <include layout="@layout/layout_single_line" />
+
+        <Button
+            android:id="@+id/appointment_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

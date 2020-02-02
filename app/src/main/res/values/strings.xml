@@ -1,0 +1,603 @@
+<resources>
+    <string name="app_name">Service Provider</string>
+
+    <string name="map_api_key">YOUR_API_KEY</string>
+    <string name="ad_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_enabled">false</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In Now</string>
+    <string name="action_join">Join Now</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_navigation_drawer">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_wizard_activty">Wizard Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="do_not_have_and_account_create_account">Do not have an account? <b> Create Account </b></string>
+    <string name="already_have_and_account_create_account">Already have an account? <b> Sign In Now </b></string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+
+    <string name="password_reset_link">Password reset link will be sent to your email after Clicking Recover</string>
+    <string name="you_agree_to_comply_with_the_supplemental_terms_amp_conditions_set_forth_in_this_agreement"><![CDATA[You agree to comply with the supplemental Terms & Conditions set forth in this agreement]]></string>
+
+    <array name="business_category">
+        <item>Business Category</item>
+    </array>
+
+
+    <array name="business_sub_category">
+        <item>Business Sub Category</item>
+    </array>
+    <array name="business_gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="basic_info_gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="basic_info_country">
+        <item>Choose Country</item>
+    </array>
+    <array name="basic_info_city">
+        <item>Choose City</item>
+    </array>
+    <array name="review_time">
+        <item>Total Wait Time</item>
+        <item>15 Minutes</item>
+        <item>20 Minutes</item>
+        <item>30 Minutes</item>
+    </array>
+    <array name="sort_appointment">
+        <item>Sort By:</item>
+        <item>ID</item>
+        <item>Author</item>
+    </array>
+    <string name="title_activity_advance_search">AdvanceSearch</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="terms_of_use">Terms Of Use</string>
+    <string name="advance_search">Advance Search</string>
+    <string name="all_categories">All Categories</string>
+    <string name="sign_in_now">Sign In Now</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="sign_up">Registering…</string>
+    <string name="register_now">Register Now</string>
+    <string name="required_field">This field is required!</string>
+    <string name="featured_provider">Featured Providers</string>
+    <string name="regular_single_user">Regular Single User</string>
+    <string name="company_professional">Company/ Professional</string>
+    <string name="make_appointment">Make Appointment</string>
+    <string name="tite_leave_review">Leave Your Review</string>
+    <string name="wizard_skip">Skip</string>
+    <string name="wizard_join">Join</string>
+    <string name="tab_services">Services</string>
+    <string name="tab_business_hours">Business Hours</string>
+    <string name="tab_experience">Experience</string>
+    <string name="tab_qualification">Qualification</string>
+    <string name="tab_certificates"><![CDATA[Certificates & Awards]]></string>
+    <string name="tab_languages">Languages</string>
+    <string name="tab_amenities"><![CDATA[Amenities & Features]]></string>
+    <string name="err_login_first">Please login first to book an appointment.</string>
+    <string name="err_login_to_review">Please login first to leave a review.</string>
+    <string name="err_login_to_chat">Please login first to chat with provider.</string>
+    <string name="err_session_expire_to_chat">Your session has been expired. Please login again.</string>
+    <string name="err_login_to_fvrt">Please login to add user in favorite list.</string>
+    <string name="tab_appointments">My Appointments</string>
+    <string name="tab_contact_us">Contact Us</string>
+    <string name="msg_logout">Are you sure you want to signout?</string>
+    <string name="title_yes">Yes</string>
+    <string name="title_no">No</string>
+    <string name="title_category">Category</string>
+    <string name="title_country">Country</string>
+    <string name="title_city">City</string>
+    <string name="title_sub_category">Sub Category</string>
+    <string name="msg_select_category">Please select any category first</string>
+    <string name="msg_select_country">Please select any country first</string>
+    <string name="err_something_wrong">Something went wrong. Please check your internet connection and try again later!</string>
+    <string name="err_no_internet">No internet connection!</string>
+    <string name="msg_finalizing_appointment">Finalizing Appointment…</string>
+    <string name="msg_phone_verification">Verifying Phone Number…</string>
+    <string name="code_not_valid">Entered code is not valid!</string>
+    <string name="set_location">Set Location</string>
+    <string name="welcome_amp_greetings"><![CDATA[Welcome & Greetings]]></string>
+    <string name="an_ultimate_directory_for_service_providers">An ultimate directory for service providers</string>
+    <string name="register_as">Register As:</string>
+    <string name="your_name">Your Name</string>
+    <string name="msg_business">Business</string>
+    <string name="msg_professional">Professional</string>
+    <string name="msg_company_title">Company Title</string>
+    <string name="msg_phone">Phone</string>
+    <string name="hint_retype_password">Retype Password</string>
+    <string name="hint_enter_location">Enter A Location</string>
+    <string name="hint_lattitude">Enter Latitude</string>
+    <string name="hint_longitude">Enter Longitude</string>
+    <string name="btn_register_now">Register Now</string>
+    <string name="hint_category">Category:</string>
+    <string name="start_your_search">Start your Search</string>
+    <string name="hint_keyword">Keyword</string>
+    <string name="title_view_all"><![CDATA[View All]]></string>
+    <string name="title_featured_listing">Featured Listing</string>
+    <string name="title_top_categories">Top Categories</string>
+    <string name="title_advanced_search">Advanced Search</string>
+    <string name="title_search_now">Search Now</string>
+    <string name="title_register">Register</string>
+    <string name="title_login">Login</string>
+    <string name="title_my_appointments">My Appointments</string>
+    <string name="title_jobs">Jobs</string>
+    <string name="title_about_us">About Us</string>
+    <string name="title_terms_of_use">Terms Of Use</string>
+    <string name="title_help_amp_support"><![CDATA[Help & Support]]></string>
+    <string name="title_contact_support">Contact Support</string>
+    <string name="title_invite">Invite Friends</string>
+    <string name="title_rate">Rate this App</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_general">General</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_services">Services</string>
+    <string name="title_appointment_type">Appointment Type</string>
+    <string name="title_appointment_reason">Appointment Reason</string>
+    <string name="title_add_photo">Add Photo</string>
+    <string name="title_add_now">Add Now</string>
+    <string name="title_upload_banner">Upload Banner Photo</string>
+    <string name="title_select_categories">Select Categories</string>
+    <string name="title_basic_information">Basic Information</string>
+    <string name="title_tagline">Tag Line</string>
+    <string name="title_zip">Zip/Postal Code</string>
+    <string name="title_fax">Fax</string>
+    <string name="title_url">URL</string>
+    <string name="title_short_descrip">Short Description</string>
+    <string name="title_location">Location</string>
+    <string name="title_languages">Languages</string>
+    <string name="title_update_now">Update Now</string>
+    <string name="title_imp_instructions">Important Instructions:</string>
+    <string name="location_note">Please note ! given below latitude and longitude is compulsory for search on map.</string>
+
+
+    <string name="title_manage_services">Manage Services</string>
+    <string name="title_manage_team">Manage Team</string>
+    <string name="title_manage_jobs">Manage Jobs</string>
+    <string name="title_manage_articles">Manage Articles</string>
+    <string name="title_manage_appointments">Manage Appointments</string>
+    <string name="title_favorite_listing">Favorite Listing</string>
+    <string name="title_security_setting">Security Settings</string>
+    <string name="title_privacy_setting">Privacy Settings</string>
+
+    <string name="no_vote">(0 vote)</string>
+    <string name="make_appointement">Make Appointement</string>
+    <string name="txt_call">Call:&#160;</string>
+    <string name="txt_search_by_keyword">Search By Keyword</string>
+    <string name="title_website">Website</string>
+    <string name="title_email">Email</string>
+    <string name="select_time_slot">Please select any time slot!</string>
+    <string name="msg_book_appointment">Booking appointment…</string>
+    <string name="select_appointment_date">Select Appointment Date</string>
+    <string name="select_appointment_time">Select Appointment Time</string>
+    <string name="start_booking">Start Booking</string>
+    <string name="txt_space_left">Spaces left:&#160;</string>
+    <string name="waiting_for_automatically_detect_an_sms_sent_to">Waiting for automatically detect an SMS sent to</string>
+    <string name="verify">Verify</string>
+    <string name="enter_code_here">Enter code here</string>
+    <string name="title_resend">Resend</string>
+    <string name="title_verify">Verify</string>
+    <string name="enter_keyword">Enter Keyword</string>
+    <string name="search_by_category">Search By Category</string>
+    <string name="category">Category:</string>
+    <string name="sub_category">Sub Category:</string>
+    <string name="search_by_location">Search By Location</string>
+    <string name="city">City:</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="search">Search</string>
+    <string name="distance_in_miles">Distance in ( Miles )&#160;</string>
+    <string name="msg_exit">Are you sure you want to exit?</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="version">Version &#160;</string>
+    <string name="copyright_2017_the_listingo">Copyright @ 2017 The Listingo</string>
+    <string name="title_introduction">Introduction</string>
+    <string name="btn_direction">Direction</string>
+    <string name="who_we_are_amp_what_we_do"><![CDATA[Who We Are & What We Do?]]></string>
+    <string name="txt_services">Services</string>
+    <string name="txt_business_hours">Business Hours</string>
+    <string name="txt_experience">Experience</string>
+    <string name="txt_qualification">Qualification</string>
+    <string name="txt_certificates_amp_awards"><![CDATA[Certificates & Awards]]></string>
+    <string name="txt_our_team">Our Team</string>
+    <string name="txt_languages">Languages</string>
+    <string name="txt_amenities_amp_features"><![CDATA[Amenities & Features]]></string>
+    <string name="txt_media">Media</string>
+    <string name="txt_downloads">Downloads</string>
+    <string name="txt_contact_us">Contact Us</string>
+    <string name="click_to_add_photo">Click to "Add Photo" Button to <br />Add  Profile Photo/Logo</string>
+    <string name="click_to_add_banner">Click to "Add Photo" Button to <br />Add  Banner Photo</string>
+    <string name="click_to_update_profile">Click to "Update Profile"</string>
+
+    <string name="dlg_msg_submit_review">Submitting review…</string>
+    <string name="msg_select_wait_time">Please select wait time</string>
+    <string name="review_title">Review Title</string>
+    <string name="would_your_recommend">Would Your Recommend?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="filter_by_date">Filter By Date</string>
+    <string name="click_to_update_now_button_to_n_update_the_latest_added_details">Click To Update Now Button To  \n Update The Latest Added Details</string>
+    <string name="buy_package">Click "Buy/Renew Now Button" To  \n Buy New Package</string>
+
+    <string name="description">Description</string>
+
+    <string name="title_leave_your_rating">Leave Your Rating</string>
+    <string name="title_ease_of_appointment">Ease of Appointment</string>
+    <string name="title_promptness">Promptness</string>
+    <string name="title_courteous_staff">Courteous Staff</string>
+    <string name="title_accurate_diagnosis">Accurate Diagnosis</string>
+    <string name="title_professional_manner">Professional Manner</string>
+    <string name="title_spends_time_with_me">Spends Time with Me</string>
+    <string name="title_follow_up_after_visit">Follow Up After Visit</string>
+    <string name="title_work_knowledge">Work Knowledge</string>
+    <string name="btn_submit">Submit</string>
+
+    <plurals name="numberOfVotes">
+        <item quantity="one">&#160;vote</item>
+        <item quantity="other">&#160;votes</item>
+    </plurals>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <string name="default_notification_channel_name" translatable="true">News</string>
+    <string name="msg_update_services">Updating Services…</string>
+    <string name="title_reviews">Reviews</string>
+    <string name="msg_updating_fvrt">Updating favorites…</string>
+    <string name="msg_updating_privacy">Updating privacy…</string>
+
+    <string name="title_home">Home</string>
+    <string name="reject_appointment">Reject Appointment</string>
+    <string name="fetching_appointments">Fetching Appointments…</string>
+
+    <string name="click_to_update_privacy">Click To \"Update Privacy\" Button To \n Update The Latest Settings</string>
+    <string name="click_to_update">Click To \"Update Now\" Button To \n Update The Latest Settings</string>
+
+    <string name="update_privacy">Update Privacy</string>
+    <string name="tlt_make_profile_photo_public">Make Profile Photo Public</string>
+    <string name="tlt_make_banner_photo_public">Make banner Photo Public</string>
+    <string name="tlt_appointment_option">Appointment Option</string>
+    <string name="tlt_contact_form">Contact Form</string>
+    <string name="tlt_business_hours">Business Hours</string>
+    <string name="tlt_show_services">Show Services</string>
+    <string name="tlt_show_team">Show Team</string>
+    <string name="tlt_show_gallery">Show Gallery</string>
+    <string name="tlt_show_videos">Show Videos</string>
+    <string name="loading_settings">Loading Settings…</string>
+    <string name="no_record_found">No record Found</string>
+    <string name="update_now">Update Now</string>
+    <string name="txt_enter_message">Enter Message</string>
+    <string name="tlt_done">Done</string>
+    <string name="select">Select</string>
+    <string name="clear_selection">Clear Selection</string>
+    <string name="no_data_available">No data available</string>
+    <string name="add_your_services">Add Your Services</string>
+    <string name="phone_num_verification">Phone Number Verification</string>
+    <string name="add_new">Add New +</string>
+
+    <string name="msg_updating">Updating…</string>
+
+    <array name="service_price_type">
+        <item>Choose price type</item>
+        <item>hour</item>
+        <item>visit</item>
+    </array>
+
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <string-array name="categories">
+        <item>Select Categories</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Select Languages</item>
+    </string-array>
+
+    <string name="title_activity_near_by">Nearby Providers</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_profile">Manage Profile</string>
+    <string name="guest">Guest</string>
+    <string name="greetings">Greetings</string>
+    <string name="msg_uploading">Uploading...</string>
+
+    <string-array name="locale">
+        <item>Select App Language</item>
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Indonesian</item>
+    </string-array>
+
+    <string name="default_locale">en</string>
+
+    <string name="my_favorites">My Favorites</string>
+    <string name="search_result">Search Result</string>
+    <string name="jobs">Jobs</string>
+    <string name="manage_services">Manage Services</string>
+    <string name="inbox">Inbox</string>
+    <string name="upload_profile_photo_logo">Upload Profile Photo/Logo</string>
+    <string name="rate_app">Rate application</string>
+    <string name="please_rate_this_app">Please, rate the app at play store</string>
+    <string name="title_cancel">CANCEL</string>
+    <string name="btn_rate">RATE</string>
+    <string name="apt_service">Service:</string>
+    <string name="apt_type">Type:</string>
+    <string name="your_appointments">Your Appointments</string>
+    <string name="clear_filter">Clear filter</string>
+    <string name="no_appointment_yet">No appointment yet</string>
+    <string name="customer_name">Customer Name:</string>
+    <string name="appointment_date">Appointment Date:</string>
+    <string name="appointment_time">Appointment Time:</string>
+    <string name="service">Service:</string>
+    <string name="appointment_type">Appointment Type:</string>
+    <string name="approve_now">Approve Now</string>
+    <string name="apt_description">Description:</string>
+    <string name="reason_for_visit">Reason For Visit:</string>
+    <string name="tlt_monday">Monday</string>
+    <string name="tlt_tuesday">Tuesday</string>
+    <string name="tlt_wednesday">Wednesday</string>
+    <string name="tlt_thursday">Thursday</string>
+    <string name="tlt_friday">Friday</string>
+    <string name="tlt_saturday">Saturday</string>
+    <string name="tlt_sunday">Sunday</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="career_level">Career Level</string>
+    <string name="experience">Experience</string>
+    <string name="salary">Salary</string>
+    <string name="job_type">Job Type:</string>
+    <string name="qualification">Qualification:</string>
+    <string name="language_s">Language/s:</string>
+    <string name="job_requirements">Job Requirements</string>
+    <string name="job_details">Job Details</string>
+    <string name="service_title">Service Title</string>
+    <string name="service_price">Service Price</string>
+    <string name="add_this_service_in_appointment_list">Add this service in appointment list</string>
+    <string name="this_is_a_free_service">This is a free service</string>
+    <string name="email_pass_wrong">Email or Password is wrong!</string>
+    <string name="rejection_title">Rejection Title</string>
+    <string name="rejection_description">Rejection Description</string>
+    <string name="reject_now">Reject Now</string>
+    <string name="rejection_reason">Rejection Reason</string>
+    <string name="appointment_information">Appointment Information</string>
+    <string name="reason">Reason:</string>
+    <string name="your_details">Your Details</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="submit">Submit</string>
+    <string name="apt_approve">Approve</string>
+    <string name="apt_decline">Decline</string>
+    <string name="radius_miles">Radius (Miles):</string>
+    <string name="country">Country:</string>
+    <string name="other">Other</string>
+    <string name="not_verified">Please activate your account before using our services or contact to administrator to activate your account.</string>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- green state -->
+    <item
+        android:drawable="@drawable/button_selected"
+        android:state_selected="true"/>
+    <!-- green state -->
+    <item
+        android:drawable="@drawable/button_selected"
+        android:state_pressed="true"/>
+    <!-- red state -->
+    <item
+        android:drawable="@drawable/button_unselected"/>
+
+</selector>

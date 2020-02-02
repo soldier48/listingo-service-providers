@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.tregix.serviceprovider.fragments.ProviderListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/list"
+        android:name="com.tregix.serviceprovider.fragments.ProviderListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:shimmer_demo_child_count="5"
+        android:layout_above="@+id/adView"
+        app:shimmer_demo_layout="@layout/demo_category_item"
+        tools:context="com.tregix.serviceprovider.activities.ProviderListActivity"
+        tools:listitem="@layout/fragment_provider" />
+
+    <TextView
+        android:id="@+id/list_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_record_found"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_unit_id"
+        ads:layout_anchorGravity="bottom|center"/>
+
+</RelativeLayout>

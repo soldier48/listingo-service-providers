@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/selection_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:weightSum="100">
+
+    <TextView
+        android:id="@+id/selection_title"
+        android:layout_width="0dp"
+        android:layout_weight="65"
+        android:layout_height="wrap_content"
+        android:text="@string/select"
+        android:gravity="start"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/selection_clear"
+        android:layout_width="0dp"
+        android:layout_weight="35"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:fontFamily="@font/font_opensans"
+        android:textColor="@android:color/white"
+        android:text="@string/clear_selection"
+        android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/selection_header"
+        android:id="@+id/selection_list"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/selection_no_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="@string/no_data_available"
+        android:textSize="16sp" />
+</RelativeLayout>

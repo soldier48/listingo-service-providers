@@ -1,0 +1,154 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/privacy_profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_make_profile_photo_public"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_banner_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_make_banner_photo_public"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_apt_opt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_appointment_option"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_contact_form"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_business_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_business_hours"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_show_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_show_services"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_show_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_show_team"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_show_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_show_gallery"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <Switch
+        android:id="@+id/privacy_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tlt_show_videos"
+        android:textSize="16sp"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:layout_margin="10dp"/>
+
+    <include layout="@layout/layout_single_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_opensans"
+        android:gravity="center"
+        android:text="@string/click_to_update_privacy" />
+
+   <Button
+        android:id="@+id/privacy_update"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/font_medium"
+        android:text="@string/update_privacy"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+</ScrollView>

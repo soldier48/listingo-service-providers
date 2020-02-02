@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".activities.PackageDetailActivity">
+        <include layout="@layout/fragment_packageslist" />
+
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/list"
+            android:name="com.tregix.serviceprovider.fragments.ProviderListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            app:shimmer_demo_child_count="5"
+            app:shimmer_demo_layout="@layout/demo_category_item"
+            android:nestedScrollingEnabled="false"
+            tools:context="com.tregix.serviceprovider.activities.ProviderListActivity"
+            tools:listitem="@layout/fragment_provider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/font_opensans"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textDirection="locale"
+            android:textAlignment="center"
+            android:text="@string/buy_package" />
+
+        <Button
+            android:id="@+id/manage_service_submit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/font_medium"
+            android:text="Buy / Renew Now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/font_medium"
+        android:text="Rejection Reason"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <include layout="@layout/layout_single_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle_background"
+            android:orientation="vertical">
+
+            <EditText
+                style="@style/AdvanceSearchEsitTextStyle"
+                android:id="@+id/rejection_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/field_height"
+                android:background="@color/tw__transparent"
+                android:hint="Rejection Title" />
+
+            <include layout="@layout/layout_single_line" />
+
+
+            <EditText
+                android:id="@+id/rejection-description"
+                style="@style/AdvanceSearchTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:background="@color/tw__transparent"
+                android:hint="Rejection Description"
+                android:minLines="5"
+                android:paddingTop="10dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/reject_now"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/field_height"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Reject Now"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</LinearLayout>

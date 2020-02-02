@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Spinner
+        android:id="@+id/register_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:background="@drawable/spinner_icon"
+        android:fontFamily="@font/font_regular"
+        android:entries="@array/business_category" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <Spinner
+        android:id="@+id/register_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_regular"
+        android:background="@drawable/spinner_icon"
+        android:entries="@array/business_sub_category" />
+
+    <include layout="@layout/layout_single_line" />
+
+
+</LinearLayout>

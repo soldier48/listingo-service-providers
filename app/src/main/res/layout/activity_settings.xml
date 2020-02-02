@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SettingsActivity">
+
+    <TextView
+        android:id="@+id/nav_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_about_us"
+        android:onClick="onClick"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <TextView
+        android:id="@+id/nav_term_of_use"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_terms_of_use"
+        android:textAlignment="viewStart"
+        android:onClick="onClick"
+
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <TextView
+        android:id="@+id/nav_help_support"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_help_amp_support"
+        android:textAlignment="viewStart"
+        android:onClick="onClick"
+
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <TextView
+        android:id="@+id/nav_contact_support"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_contact_support"
+        android:textAlignment="viewStart"
+        android:onClick="onClick"
+
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <TextView
+        android:id="@+id/nav_invite"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:paddingEnd="20dp"
+        android:onClick="onClick"
+
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_invite"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <TextView
+        android:id="@+id/nav_rate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:onClick="onClick"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_rate"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/font_regular"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:background="@drawable/spinner_icon"
+        android:entries="@array/locale" />
+
+    <include layout="@layout/layout_single_line" />
+
+    <TextView
+        android:id="@+id/nav_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/field_height"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/font_opensans"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center|start"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"
+        android:text="@string/title_logout"
+        android:onClick="onClick"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:textSize="15sp" />
+
+
+
+</LinearLayout>
